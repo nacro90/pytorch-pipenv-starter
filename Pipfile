@@ -22,6 +22,7 @@ pytorch-transformers = "*"
 pandas = "*"
 numpy = "*"
 torchvision = "*"
+sklearn = "*"
 
 [requires]
 python_version = "3.8"
