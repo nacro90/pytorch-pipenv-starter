@@ -3,6 +3,11 @@ name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
 
+[[source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu92"
+verify_ssl = false
+
 [dev-packages]
 pynvim = "*"
 python-language-server = {extras = ["all"], version = "*"}
@@ -11,8 +16,12 @@ pyls-mypy = "*"
 pyls-isort = "*"
 
 [packages]
-torch = "*"
+torch = {index = "pytorch",version = "==1.6.0"}
 jupyterlab = "*"
+pytorch-transformers = "*"
+pandas = "*"
+numpy = "*"
+torchvision = "*"
 
 [requires]
 python_version = "3.8"
