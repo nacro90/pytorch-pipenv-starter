@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pynvim = "*"
+python-language-server = {extras = ["all"], version = "*"}
+pyls-black = "*"
+pyls-mypy = "*"
+pyls-isort = "*"
+
+[packages]
+torch = "*"
+jupyterlab = "*"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
